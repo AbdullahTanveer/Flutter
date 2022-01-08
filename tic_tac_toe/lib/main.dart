@@ -34,6 +34,7 @@ class _IntroScreenState extends State<IntroScreen>
   Widget build(BuildContext context) {
     const color = Colors.white;
     return MaterialApp(
+      title: "Tic Tac Toe",
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           backgroundColor: Colors.grey[900],
