@@ -16,8 +16,8 @@ class _HomePageState extends State<HomePage> {
   // default text style
   var textStyle = const TextStyle(fontSize: 30.0, color: Colors.white);
 
-  static var newFont = GoogleFonts.pressStart2p(
-      textStyle: const TextStyle(color: Colors.black, letterSpacing: 3));
+  // static var newFont = GoogleFonts.pressStart2p(
+  //     textStyle: const TextStyle(color: Colors.black, letterSpacing: 3));
   static var newFontWhite = GoogleFonts.pressStart2p(
       textStyle: const TextStyle(
           color: Colors.white, letterSpacing: 3, fontSize: 15.0));

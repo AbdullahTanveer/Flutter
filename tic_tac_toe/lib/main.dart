@@ -32,7 +32,6 @@ class _IntroScreenState extends State<IntroScreen>
 
   @override
   Widget build(BuildContext context) {
-    const color = Colors.white;
     return MaterialApp(
       title: "Tic Tac Toe",
       debugShowCheckedModeBanner: false,
@@ -45,41 +44,35 @@ class _IntroScreenState extends State<IntroScreen>
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.only(top: 90.0),
-                    child: Container(
-                      child: Text(
-                        "TIC TAC TOE",
-                        style: myNewFontWhite.copyWith(fontSize: 30),
-                      ),
+                    child: Text(
+                      "TIC TAC TOE",
+                      style: myNewFontWhite.copyWith(fontSize: 30),
                     ),
                   ),
                 ),
                 Expanded(
                   flex: 2,
-                  child: Container(
-                    child: AvatarGlow(
-                      endRadius: 140,
-                      duration: Duration(seconds: 2),
-                      glowColor: Colors.white,
-                      repeat: true,
-                      repeatPauseDuration: Duration(seconds: 1),
-                      startDelay: Duration(seconds: 1),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                              style: BorderStyle.none,
-                            ),
-                            shape: BoxShape.circle),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.grey[900],
-                          child: Container(
-                            child: Image.asset(
-                              'lib/images/tictactoelogo.png',
-                              color: Colors.white,
-                              fit: BoxFit.scaleDown,
-                            ),
+                  child: AvatarGlow(
+                    endRadius: 140,
+                    duration: const Duration(seconds: 2),
+                    glowColor: Colors.white,
+                    repeat: true,
+                    repeatPauseDuration: const Duration(seconds: 1),
+                    startDelay: const Duration(seconds: 1),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            style: BorderStyle.none,
                           ),
-                          radius: 80.0,
+                          shape: BoxShape.circle),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.grey[900],
+                        child: Image.asset(
+                          'lib/images/tictactoelogo.png',
+                          color: Colors.white,
+                          fit: BoxFit.scaleDown,
                         ),
+                        radius: 80.0,
                       ),
                     ),
                   ),
@@ -87,10 +80,8 @@ class _IntroScreenState extends State<IntroScreen>
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.only(top: 80.0),
-                    child: Container(
-                      child: Text("@MrCharlie",
-                          style: myNewFontWhite.copyWith(fontSize: 20)),
-                    ),
+                    child: Text("@MrCharlie",
+                        style: myNewFontWhite.copyWith(fontSize: 20)),
                   ),
                 ),
                 GestureDetector(
